@@ -32,7 +32,7 @@ rating {
   opacity: 1 !important;
 }
 
-.rating > input:checked ~ label:after{
+.rating > input:checked ~ label::before{
   opacity:1;
 }
 
