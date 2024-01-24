@@ -7,213 +7,98 @@
     <title>Survey Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-<div class="container mt-10 p-10">
+    <div class="container mt-5">
 
-    <form class="row">
-        <div class="col-md-6">
-            <label for="first_name" class="form-label required-asterisk"><strong>Name</strong></label>
-            <input type="text" class="form-control" id="first_name" required="required">
-            <small>First</small>
-        </div>
-        <div class="col-md-6">
-            <label for="last_name" class="form-label">&nbsp</label>
-            <input type="text" class="form-control" id="last_name" required="required">
-            <small>Last</small>
-        </div>
-        <div class="col-12">
-            <label for="input_email" class="form-label required-asterisk">Email</label>
-            <input type="email" class="form-control" id="input_email" required="required"> 
-        </div>
+        <form class="row">
+            <div class="col-md-6">
+                <label for="first_name" class="form-label required-asterisk"><strong>Name</strong></label>
+                <input type="text" class="form-control" id="first_name" required="required">
+                <small>First</small>
+            </div>
+            <div class="col-md-6">
+                <label for="last_name" class="form-label">&nbsp</label>
+                <input type="text" class="form-control" id="last_name" required="required">
+                <small>Last</small>
+            </div>
+            <div class="col-12 mt-4">
+                <label for="input_email" class="form-label required-asterisk"><strong>Email</strong></label>
+                <input type="email" class="form-control" id="input_email" required="required">
+            </div>
 
-<div class="col-md-6 rating">
-    <label for="last_name" class="form-label required-asterisk">Your Experience</label>
-  <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-  <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-  <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-  <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-  <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-</div>
+            <span class="form-label required-asterisk mt-4 mb-0"><strong>Your Experience</strong></span>
+            <div class="rating mb-4">
+
+                <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+              </div>
 
 
-        <label for="table" class="form-label required-asterisk"><strong>How Satisfied Are You</strong></label>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Very Unsatisified</th>
-                    <th scope="col">Unsatisified</th>
-                    <th scope="col">Netural</th>
-                    <th scope="col">Satisfied</th>
-                    <th scope="col">Very Satisfied</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Purchase</th>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_purchase"
-                                id="satisfaction_purchase_1" value="veryUnsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_purchase"
-                                id="satisfaction_purchase_2" value="Unsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_purchase"
-                                id="satisfaction_purchase_3" value="Netural" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_purchase"
-                                id="satisfaction_purchase_4" value="Satisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_purchase"
-                                id="satisfaction_purchase_5" value="very Satisfied" required="required">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Service</th>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_service"
-                                id="satisfaction_service_1" value="veryUnsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_service"
-                                id="satisfaction_service_2" value="unsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_service"
-                                id="satisfaction_service_3" value="Netural" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_service"
-                                id="satisfaction_service_4" value="Satisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_service"
-                                id="satisfaction_service_5" value="very Satisfied" required="required">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Company Overall</th>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                id="satisfaction_company_overall_1"value="VeryUnsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                id="satisfaction_company_overall_2" value="Unsatisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                id="satisfaction_company_overall_3"value="Netural" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                id="satisfaction_company_overall_4" value="Satisfied" required="required">
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                id="satisfaction_company_overall_5" value="very Satisfied" required="required">
-                        </div>
-                    </td>
-                </tr>
 
-            </tbody>
-        </table>
-           
-
-        
-        <label for="table" class="form-label mt-7 required-asterisk"><strong>How likely are you to</strong></label>
+            <span for="table" class="form-label required-asterisk"><strong>How Satisfied Are You</strong></span>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">Very Unlikely</th>
-                        <th scope="col">Unlikely</th>
+                        <th scope="col">Very Unsatisified</th>
+                        <th scope="col">Unsatisified</th>
                         <th scope="col">Netural</th>
-                        <th scope="col">likely</th>
-                        <th scope="col">Very likely</th>
+                        <th scope="col">Satisfied</th>
+                        <th scope="col">Very Satisfied</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Buy from us again</th>
+                        <th scope="row">Purchase</th>
                         <td>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="buy_again"
-                                    id="buy_again_1" value="veryUnlikely" required="required">
+                                <input class="form-check-input" type="radio" name="satisfaction_purchase"
+                                    id="satisfaction_purchase_1" value="veryUnsatisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="buy_again"
-                                    id="buy_again_2" value="Unlikely" required="required">
+                                <input class="form-check-input" type="radio" name="satisfaction_purchase"
+                                    id="satisfaction_purchase_2" value="Unsatisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="buy_again"
-                                    id="buy_again_3" value="Netural" required="required">
+                                <input class="form-check-input" type="radio" name="satisfaction_purchase"
+                                    id="satisfaction_purchase_3" value="Netural" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="buy_again"
-                                    id="buy_again_4" value="likely" required="required">
+                                <input class="form-check-input" type="radio" name="satisfaction_purchase"
+                                    id="satisfaction_purchase_4" value="Satisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="buy_again"
-                                    id="buy_again_5" value="very likely" required="required">
+                                <input class="form-check-input" type="radio" name="satisfaction_purchase"
+                                    id="satisfaction_purchase_5" value="very Satisfied" required="required">
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Recommend our<br> product to others</th>
+                        <th scope="row">Service</th>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_service"
-                                    id="satisfaction_service_1" value="veryUnlikely" required="required">
+                                    id="satisfaction_service_1" value="veryUnsatisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_service"
-                                    id="satisfaction_service_2" value="unlikely" required="required">
+                                    id="satisfaction_service_2" value="unsatisfied" required="required">
                             </div>
                         </td>
                         <td>
@@ -225,46 +110,46 @@
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_service"
-                                    id="satisfaction_service_4" value="likely" required="required">
+                                    id="satisfaction_service_4" value="Satisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_service"
-                                    id="satisfaction_service_5" value="very likely" required="required">
+                                    id="satisfaction_service_5" value="very Satisfied" required="required">
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Recommend our<br> company to others</th>
+                        <th scope="row">Company Overall</th>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                    id="satisfaction_company_overall_1"value="VeryUnlikely" required="required">
+                                    id="satisfaction_company_overall_1" value="VeryUnsatisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                    id="satisfaction_company_overall_2" value="Unlikely" required="required">
+                                    id="satisfaction_company_overall_2" value="Unsatisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                    id="satisfaction_company_overall_3"value="Netural" required="required">
+                                    id="satisfaction_company_overall_3" value="Netural" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                    id="satisfaction_company_overall_4" value="likely" required="required">
+                                    id="satisfaction_company_overall_4" value="Satisfied" required="required">
                             </div>
                         </td>
                         <td>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="satisfaction_company_overall"
-                                    id="satisfaction_company_overall_5" value="very likely" required="required">
+                                    id="satisfaction_company_overall_5" value="very Satisfied" required="required">
                             </div>
                         </td>
                     </tr>
@@ -273,11 +158,134 @@
             </table>
 
 
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
-</div>
+             <div class="mt-4 mb-4">
+                 <span for="table" class="form-label required-asterisk"><strong>How likely are you to</strong></span>
+                 <table class="table table-striped mt-4">
+                     <thead>
+                         <tr>
+                             <th scope="col"></th>
+                             <th scope="col">Very Unlikely</th>
+                             <th scope="col">Unlikely</th>
+                             <th scope="col">Netural</th>
+                             <th scope="col">likely</th>
+                             <th scope="col">Very likely</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <th scope="row">Buy from us again</th>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="buy_again" id="buy_again_1"
+                                         value="veryUnlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="buy_again" id="buy_again_2"
+                                         value="Unlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="buy_again" id="buy_again_3"
+                                         value="Netural" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="buy_again" id="buy_again_4"
+                                         value="likely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="buy_again" id="buy_again_5"
+                                         value="very likely" required="required">
+                                 </div>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">Recommend our<br> product to others</th>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_service"
+                                         id="satisfaction_service_1" value="veryUnlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_service"
+                                         id="satisfaction_service_2" value="unlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_service"
+                                         id="satisfaction_service_3" value="Netural" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_service"
+                                         id="satisfaction_service_4" value="likely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_service"
+                                         id="satisfaction_service_5" value="very likely" required="required">
+                                 </div>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">Recommend our<br> company to others</th>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_company_overall"
+                                         id="satisfaction_company_overall_1" value="VeryUnlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_company_overall"
+                                         id="satisfaction_company_overall_2" value="Unlikely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_company_overall"
+                                         id="satisfaction_company_overall_3" value="Netural" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_company_overall"
+                                         id="satisfaction_company_overall_4" value="likely" required="required">
+                                 </div>
+                             </td>
+                             <td>
+                                 <div class="form-check">
+                                     <input class="form-check-input" type="radio" name="satisfaction_company_overall"
+                                         id="satisfaction_company_overall_5" value="very likely" required="required">
+                                 </div>
+                             </td>
+                         </tr>
+     
+                     </tbody>
+                 </table>
+
+             </div>
+
+            <div class="form-group">
+                <label for="comment"><strong>Additional comments or suggestions:</strong></label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
